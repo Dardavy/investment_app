@@ -10,7 +10,7 @@ print(">>> YOU ARE WELCOME TO COHORT5 INVWSTMENT APP <<<")
                   # Here creatings values to different variables
 Trials = 3        # Total Attempts for Pin number input tto access th eApp
 Userpin = 4321    # keypin to gain access to the app
-balance = 5000    # Account Opens with #5000 im balance
+BalanceIwallet = 5000    # Account Opens with #5000 im balance
 rate = 0.5        # at every depsit you have 50% (Percentage) increament
 vat = 0.07        # At every W ithdrawal There is Charges of 7%(percntage) of VAT Deduction
 
@@ -38,7 +38,7 @@ while Trials != 0:
            
   # Here The percentage Increase Takes effect and added to the user balance          
              if amount_deposited > 0:
-                BalanceIwallet = amount_deposited + percentage_increase + balance           
+                BalanceIwallet = amount_deposited + percentage_increase + BalanceIwallet           
                 print(WAllet_name,"Your Deposit Is Successful! Your Now Have Total balance Of #", BalanceIwallet,"in Wallet" )
              else:
                 print('Sorry Yur Entered non Positive Number')
@@ -54,7 +54,7 @@ while Trials != 0:
              if Amount_to_withdraw > 0:
                 if(BalanceIwallet - Amount_to_withdraw)>= 0:
                     BalanceIwallet = BalanceIwallet - vat_per_calc - Amount_to_withdraw    
-                    print("Thanks! Your Balance Is #",BalanceIwallet)
+                    print(Wallet_Name, "Thanks!After VAT Deduction Your Balance Is #",BalanceIwallet)
                 else:
                    print("There Is Not Enough Money In Your Wallet, Please! Fund you Wallet")
 
@@ -66,7 +66,7 @@ while Trials != 0:
           elif(choice == "3"):
             Wallet_Name = input("Please Enter Your Wallet Name: ")                          
 
-            print( "Thanks For Your Enquiry! Your Current Balance Is:#", BalanceIwallet)
+            print(Wallet_Name, "Thanks For Your Enquiry! Your Current Balance Is:#", BalanceIwallet)
 
   # Here Log You Out Of The System           
           elif(choice == "4"):
