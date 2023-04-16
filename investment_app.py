@@ -7,15 +7,15 @@
 
 print(">>> YOU ARE WELCOME TO COHORT5 INVWSTMENT APP <<<") 
 
-                  # Here creatings values to different variables
-Trials = 3        # Total Attempts for Pin number input tto access th eApp
+                  # We created values to different variables
+Trials = 3        # Total Attempts for Pin number input to access the App
 Userpin = 4321    # keypin to gain access to the app
-BalanceIwallet = 5000    # Account Opens with #5000 im balance
-rate = 0.5        # at every depsit you have 50% (Percentage) increament
-vat = 0.07        # At every W ithdrawal There is Charges of 7%(percntage) of VAT Deduction
+BalanceIwallet = 5000    # Account Opens with #5000 balance
+rate = 0.5        # For every depsit you have 50% (Percentage) increament
+vat = 0.07        # For every Withdrawal There is Charge of 7%  VAT Deduction
 
 choice = " "      # Assigned an empty string value to choice for operations of this App
-   # Here colects user assigned pin number
+   # The system colects user assigned pin number here
 while Trials != 0:
     pin = int(input("Please Enter Your 4 digit pin Number: ")) 
     if pin != Userpin:
@@ -70,7 +70,7 @@ while Trials != 0:
 
   # Here Log You Out Of The System           
           elif(choice == "4"):
-             pass
+             print("Thank for using Cohort5 investment App, Bye!")
           else:
              print(">>> Wrong Selection.. Please! Select Correct )ption From The Menu. THANK YOU!!! <<<")
                   
